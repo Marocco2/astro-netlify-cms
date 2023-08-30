@@ -1,6 +1,6 @@
 {
   "name": "astro-netlify-cms",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Add Netlify CMS’s admin dashboard to your Astro project",
   "repository": "delucis/astro-netlify-cms",
   "homepage": "https://github.com/delucis/astro-netlify-cms",
@@ -38,6 +38,7 @@
     "@changesets/changelog-github": "^0.4.7",
     "@changesets/cli": "^2.25.0",
     "astro": "^3.0.0-beta",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
   }
 }
