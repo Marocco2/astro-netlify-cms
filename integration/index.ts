@@ -76,7 +76,7 @@ export default function NetlifyCMS({
       },
 
       'astro:server:start': () => {
-        proxy = spawn('netlify-cms-proxy-server', {
+        proxy = spawn('@staticcms/proxy-server', {
           stdio: 'inherit',
           // Run in shell on Windows to make sure the npm package can be found.
           shell: process.platform === 'win32',
