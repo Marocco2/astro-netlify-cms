@@ -16,8 +16,8 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "prepack": "tsc",
-    "test:smoke": "tsc && cd demo && npm ci && npm run build",
+    "prepack": "npx tsc",
+    "test:smoke": "npx tsc && cd demo && npm ci && npm run build",
     "test": "npm run test:smoke"
   },
   "keywords": [
