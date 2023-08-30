@@ -30,7 +30,7 @@ function generateVirtualConfigModule({
   });
 
   return `${imports.join('\n')}
-import * as NCMS from 'netlify-cms-app';
+import * as NCMS from '@staticcms/core';
 ${identityWidget}
 export default {
   cms: NCMS,
