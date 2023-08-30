@@ -1,5 +1,5 @@
 import type { AstroIntegration, AstroUserConfig } from 'astro';
-import type { CmsConfig } from 'netlify-cms-core';
+import type { Config } from '@staticcms/core';
 import { spawn } from 'node:child_process';
 import type { PreviewStyle } from './types.js';
 import AdminDashboard from './vite-plugin-admin-dashboard.js';
@@ -12,7 +12,7 @@ interface NetlifyCMSOptions {
    * @default '/admin'
    */
   adminPath?: string;
-  config: Omit<CmsConfig, 'load_config_file' | 'local_backend'>;
+  config: Omit<Config, 'local_backend'>;
   disableIdentityWidgetInjection?: boolean;
   previewStyles?: PreviewStyle[];
 }

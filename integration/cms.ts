@@ -12,8 +12,6 @@ export default function initCMS({
 
   cms.init({
     config: {
-      // Don’t try to load config.yml as we’re providing the config below
-      load_config_file: false,
       // Enable use of the Netlify CMS proxy server when working locally
       local_backend: true,
       ...mediaDefaults,

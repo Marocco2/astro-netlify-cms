@@ -1,4 +1,4 @@
-import type { CmsConfig } from 'netlify-cms-core';
+import type { Config } from '@staticcms/core';
 import type { Plugin } from 'vite';
 import type { PreviewStyle } from './types';
 
@@ -10,7 +10,7 @@ function generateVirtualConfigModule({
   previewStyles = [],
   identityWidget,
 }: {
-  config: CmsConfig;
+  config: Config;
   previewStyles: Array<string | [string] | [string, { raw: boolean }]>;
   identityWidget: string;
 }) {
@@ -45,7 +45,7 @@ export default function AdminDashboardPlugin({
   previewStyles,
   identityWidget,
 }: {
-  config: Omit<CmsConfig, 'load_config_file' | 'local_backend'>;
+  config: Omit<Config, 'local_backend'>;
   previewStyles: PreviewStyle[];
   identityWidget: string;
 }): Plugin {

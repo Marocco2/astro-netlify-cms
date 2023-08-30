@@ -1,5 +1,5 @@
-import type CMS from 'netlify-cms-app';
-import type { CmsConfig } from 'netlify-cms-core';
+import type CMS from '@staticcms/core';
+import type { Config } from '@staticcms/core';
 
 export type NormalizedPreviewStyle =
   | [pathOrUrl: string]
@@ -9,6 +9,6 @@ export type PreviewStyle = string | NormalizedPreviewStyle;
 
 export interface InitCmsOptions {
   cms: typeof CMS;
-  config: CmsConfig;
+  config: Config;
   previewStyles?: NormalizedPreviewStyle[];
 }
