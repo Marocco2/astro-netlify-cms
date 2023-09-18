@@ -29,6 +29,7 @@
   "dependencies": {
     "@staticcms/core": "^3.0.2",
     "@staticcms/proxy-server": "^3.0.2",
+    "@types/netlify-identity-widget": "^1.9.3",
     "netlify-identity-widget": "^1.9.2"
   },
   "peerDependencies": {

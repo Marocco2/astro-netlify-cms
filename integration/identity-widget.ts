@@ -1,13 +1,13 @@
-import identity from 'netlify-identity-widget';
+import * as NetlifyIdentityWidget from 'netlify-identity-widget';
 
 export function initIdentity(adminPath: string) {
-  identity.on('init', (user) => {
+  NetlifyIdentityWidget.on('init', (user) => {
     if (!user) {
-      identity.on('login', () => {
+      NetlifyIdentityWidget.on('login', () => {
         document.location.href = adminPath;
       });
     }
   });
 
-  identity.init();
+  NetlifyIdentityWidget.init();
 }
