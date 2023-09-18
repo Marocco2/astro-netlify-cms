@@ -71,7 +71,7 @@ export default function NetlifyCMS({
         });
 
         if (!disableIdentityWidgetInjection) {
-          injectScript('page', identityWidgetScript);
+          injectScript('head-inline', identityWidgetScript);
         }
       },
 
