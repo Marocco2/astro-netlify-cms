@@ -30,10 +30,10 @@ function generateVirtualConfigModule({
   });
 
   return `${imports.join('\n')}
-import * as NCMS from '@staticcms/core';
+import CMS from '@staticcms/core';
 ${identityWidget}
 export default {
-  cms: NCMS,
+  cms: CMS,
   config: JSON.parse('${JSON.stringify(config)}'),
   previewStyles: [${styles.join(',')}],
 };
