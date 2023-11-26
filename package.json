@@ -27,8 +27,8 @@
     "netlify-cms"
   ],
   "dependencies": {
-    "@staticcms/core": "^3.3.1",
-    "@staticcms/proxy-server": "^3.0.2",
+    "@staticcms/core": "next",
+    "@staticcms/proxy-server": "latest",
     "@types/netlify-identity-widget": "^1.9.3",
     "netlify-identity-widget": "^1.9.2"
   },
